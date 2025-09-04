@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поліграф Benedix</title>
-    <link rel="shortcut icon" href="img\global\logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/global/logo.jpg" type="image/x-icon">
     <script src="https://unpkg.com/htmx.org@1.9.10"
         integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
         crossorigin="anonymous">
@@ -18,7 +18,14 @@
         data-hx-get="global.header-nav.partial.html"
       ></nav>
     </header>
-    <h1>Привіт, світ!</h1>
-    <p>Це мій перший абзац.</p>
+    <main>
+        <section id="welcom">
+            <nav
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="global.bloc-welcom.partial.html"
+            ></nav>
+        </section>
+    </main>
 </body>
 </html>
