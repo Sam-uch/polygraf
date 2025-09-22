@@ -1,0 +1,40 @@
+/* Навбар як чорна смуга з білим текстом */
+.nav {
+  background-color: #000;     /* чорний фон */
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Внутрішнє вирівнювання в один ряд */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 12px;
+  padding-inline: var(--gutter); /* або фіксовані 16/24px, якщо змінної нема */
+  max-width: var(--content-max);
+  margin-inline: auto;           /* центруємо сам блок навігації */
+}
+
+/* Лого як блок (щоб GIF не давав «провисань») */
+.nav__logo a { display: inline-block; }
+
+/* Меню-список — в ряд */
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Посилання білі, з ховером */
+.nav__link {
+  color: #fefca2;
+  text-decoration: none;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}

@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поліграф Benedix</title>
-    <link rel="shortcut icon" href="img/global/logo.jpg" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous">
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поліграф Benedix</title>
+  <link rel="stylesheet" href="polygraph/css/index.css">
+  <link rel="shortcut icon" href="img/global/logo.jpg" type="image/x-icon">
+  <script 
+    src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous">
+  </script>
 </head>
-<body>
-    <header class="header">
+<body class="page">
+  <!-- Header -->
+  <header class="header">
+    <nav
+      class="header__nav"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="polygraph/polygraph_html/global.header-nav.partial.html"
+    ></nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Welcome -->
+    <section class="welcome" id="welcome">
       <nav
+        class="welcome__block"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
+        data-hx-get="polygraph/polygraph_html/global.block-welcom.partial.html"
       ></nav>
-    </header>
-    <main>
-        <section id="welcom">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.block-welcom.partial.html"
-            ></nav>
-        </section>
-        <section id="about-us">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.block-about-us.partial.html"
-            ></nav>
-        </section>
-        <section id="types-of-services">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.block-types-of-services.partial.html"
-            ></nav>
-        </section>
-        <section id="polygraph-rubicon">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.block-polygraph-rubicon.partial.html"
-            ></nav>
-        </section>
-        <section id="form">
-            <nav
-                data-hx-trigger="load"
-                data-hx-swap="outerHTML"
-                data-hx-get="global.block-forma.partial.html"
-            ></nav>
-        </section>
-    </main>
-    <header class="fotter">
+    </section>
+
+    <!-- About us -->
+    <section class="about" id="about-us">
       <nav
+        class="about__block"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.footer-nav.partial.html"
+        data-hx-get="polygraph/polygraph_html/global.block-about-us.partial.html"
       ></nav>
-    </header>
+    </section>
+
+    <!-- Types of services -->
+    <section class="services" id="types-of-services">
+      <nav
+        class="services__block"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="polygraph/polygraph_html/global.block-types-of-services.partial.html"
+      ></nav>
+    </section>
+
+    <!-- Polygraph Rubicon -->
+    <section class="rubicon" id="polygraph-rubicon">
+      <nav
+        class="rubicon__block"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="polygraph/polygraph_html/global.block-polygraph-rubicon.partial.html"
+      ></nav>
+    </section>
+
+    <!-- Form -->
+    <section class="form" id="form">
+      <nav
+        class="form__block"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="polygraph/polygraph_html/global.block-forma.partial.html"
+      ></nav>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav
+      class="footer__nav"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="polygraph/polygraph_html/global.footer-nav.partial.html"
+    ></nav>
+  </footer>
 </body>
 </html>
