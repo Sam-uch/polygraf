@@ -1,0 +1,48 @@
+<section class="consultation-form" aria-labelledby="consultation-form-title">
+  <div class="consultation-form__header">
+    <h2 class="consultation-form__title" id="consultation-form-title">
+      Запишіться на безкоштовну консультацію
+    </h2>
+    <p class="consultation-form__subtitle">
+      Залиште свої контактні дані, щоб дізнатися більше
+    </p>
+  </div>
+
+  <div class="consultation-form__body">
+    <form class="consultation-form__form" action="#" method="post">
+      <div class="consultation-form__field">
+        <label class="consultation-form__label" for="name">Ваше ім’я:</label>
+        <input
+          class="consultation-form__input"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+
+      <div class="consultation-form__field">
+        <label class="consultation-form__label" for="phone"
+          >Номер телефону:</label
+        >
+        <input
+          class="consultation-form__input"
+          type="tel"
+          id="phone"
+          name="phone"
+          inputmode="numeric"
+          placeholder="+380XXXXXXXXX"
+          pattern="^\+?\d{10,13}$"
+          maxlength="14"
+          required
+        />
+      </div>
+
+      <div class="consultation-form__actions">
+        <button class="consultation-form__button" type="submit">
+          Відправити
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

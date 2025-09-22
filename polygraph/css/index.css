@@ -1,0 +1,17 @@
+@import url("../css/base.css");
+@import url("../css/layout.css");
+
+/* Глобальні partials */
+@import url("../css/global_poly/global.header-nav.css");
+@import url("../css/global_poly/global.footer.css");
+
+/* Index partials */
+@import url("../polygraph/css/partials/global.block-about-us.css");
+@import url("../polygraph/css/partials/global.block-forma.css");
+@import url("../polygraph/css/partials/global.block-polygraph-rubicon.css");
+@import url("../polygraph/css/partials/global.block-types-of-services.css");
+@import url("../css/partials/global.block-welcom.css");
+@import url("../polygraph/css/partials/index.shop-cafe.css");
+@import url("../polygraph/css/partials/index.testimonials.css");
+@import url("../polygraph/css/partials/index.make-a-reservation.css");
+E:\polygraf\polygraph\css\global_poly\global.header-nav.css
