@@ -1,30 +1,109 @@
 .nav {
-  display: flex;
-  justify-content: center;  /* усі діти по центру */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  background-color: #000;     /* чорний фон */
-  padding-block: 12px;
+  column-gap: 32px;
+  background: #000;
+  font-family: "Wallpoet", sans-serif;
+  font-weight: 400;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-/* Лого як блок (щоб GIF не давав «провисань») */
-.nav__logo a { display: inline-block; }
 
-/* Меню-список — в ряд */
+.nav__logo { 
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+.nav__name {
+    color: #fefca2;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav__name-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__name-link:hover {
+    text-decoration: none;
+}
+
+.nav__menu {
+    grid-column: 2;
+}
+
 .nav__list {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Посилання білі, з ховером */
 .nav__link {
-  color: #fefca2;
-  text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+    text-decoration: none;
+    transition: color .2s ease;
 }
-.nav__link:hover {
-  text-decoration: underline;
+.nav__link:hover,
+.nav__link:focus-visible {
+    color: #fefca2;
+    text-decoration: none;
 }
+
+.nav__insttik {
+    grid-column: 3;
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav__inst-link {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.nav__tik-link {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.nav__inst-image,
+.nav__tik-image {
+  position: absolute;
+  inset: 0;              
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity .2s ease;
+  pointer-events: none;  
+}
+
+
+.nav__inst-image--default,
+.nav__tik-image--default { opacity: 1; }
+
+.nav__inst-image--hover,
+.nav__tik-image--hover   { opacity: 0; }
+
+.nav__inst-link:hover .nav__inst-image--default { opacity: 0; }
+.nav__inst-link:hover .nav__inst-image--hover   { opacity: 1; }
+
+.nav__tik-link:hover .nav__tik-image--default { opacity: 0; }
+.nav__tik-link:hover .nav__tik-image--hover   { opacity: 1; }
