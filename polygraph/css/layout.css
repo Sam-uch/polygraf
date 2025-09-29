@@ -8,12 +8,6 @@
   padding-inline: var(--gutter);
 }
 
-/* =========================
-   Section defaults
-   ========================= */
-section {
-  padding-block: 32px;
-}
 
 .section__title {
   margin-bottom: 12px;
