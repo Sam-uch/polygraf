@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors - Enhanced contrast */
+  --color-primary: #fefca2;
+  --color-text: #ffffff;
+  --color-text-light: #64748b;
+  --color-background: #000000;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 8rem;
+
+  /* Other */
+  --header-height: 4rem;
+  --container-max-width: 1200px;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: "Wallpoet", system-ui, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  color: #fff;        /* твій колір */
+  text-decoration: none; /* прибрати підкреслення */
+}

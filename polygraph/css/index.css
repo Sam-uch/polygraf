@@ -1,5 +1,4 @@
-@import url("../css/base.css");
-@import url("../css/layout.css");
+@import url("../css/global.css");
 
 /* Глобальні partials */
 @import url("../css/global_poly/global.header-nav.css");
